@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import {  } from './components/bienvenida/bienvenida';
+import { BindeosComponent } from './components/bindeos/bindeos';
 
-@Component({
+@Component({BienvenidaComponent
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [BienvenidaComponent, BindeosComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
 })
 export class App {
-  protected readonly title = signal('clase1');
+  nombreUsuario = 'Ricardo';
 }

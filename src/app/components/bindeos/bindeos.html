@@ -1,0 +1,14 @@
+<hr>
+<h2>Bindeos</h2>
+<img [src]="imageUrl" alt="Logo Angular" [width]="clics">
+<br><br>
+<button (click)="incrementar()" [disabled]="botonDeshabilitado">
+  Me hicieron click {{ clics }} veces
+</button>
+<button (click)="alternarHabilitado()">
+  {{ botonDeshabilitado ? 'Habilitar' : 'Deshabilitar' }} botón
+</button>
+
+<hr>
+<app-login (loggedIn)="onLoggedIn($event)"></app-login>
+<app-bienvenida *ngIf="nombreLogueado" [nombre]="nombreLogueado"></app-bienvenida>

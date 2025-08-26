@@ -1,0 +1,13 @@
+<h3>Login (Two-way binding)</h3>
+<form (ngSubmit)="onSubmit()">
+  <label>
+    Usuario:
+    <input name="usuario" [(ngModel)]="usuario" />
+  </label>
+  <label style="margin-left: 12px;">
+    Password:
+    <input name="password" type="password" [(ngModel)]="password" />
+  </label>
+  <button type="submit">Ingresar</button>
+</form>
+<p>Vista previa: {{ usuario ? 'Hola, ' + usuario : 'Escribí tu usuario' }}</p>
