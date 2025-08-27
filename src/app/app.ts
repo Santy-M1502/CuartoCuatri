@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {  } from './components/bienvenida/bienvenida';
+import {  BienvenidaComponent} from './components/bienvenida/bienvenida';
 import { BindeosComponent } from './components/bindeos/bindeos';
 
-@Component({BienvenidaComponent
+@Component({
   selector: 'app-root',
   standalone: true,
   imports: [BienvenidaComponent, BindeosComponent],
